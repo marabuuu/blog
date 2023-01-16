@@ -598,16 +598,16 @@ title="Print to PDF"
 <p>In this blog, we will cover a few interesting and versatile methods for you to create customized <a class="reference external" href="https://qt.io">Qt</a>-based GUIs for Python in general. Since our work revolves mostly around the visualization and processing of <strong>images</strong>, we will also show you a few ways to create great user interfaces for <a class="reference external" href="https://napari.org/">napari</a>.</p>
 <p>Blogs on this topic will cover:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="../../johannes_mueller/entry_user_inter/Readme.md#getting-started">Getting started (Part 1)</a></p></li>
-<li><p><a class="reference external" href="../../johannes_mueller/entry_user_interf2/Readme.md#creating-advanced-standalone-guis">Creating standalone GUIs (Part 2)</a></p></li>
+<li><p><a class="reference external" href="../../johannes_mueller/entry_user_inter/Readme#getting-started">Getting started (Part 1)</a></p></li>
+<li><p><a class="reference external" href="../../johannes_mueller/entry_user_interf2/Readme#creating-advanced-standalone-guis">Creating standalone GUIs (Part 2)</a></p></li>
 <li><p><a class="reference external" href="#creating-advanced-guis-for-napari">Creating GUIs for napari (Part 3)</a></p></li>
-<li><p><a class="reference external" href="../entry_user_interf4/Readme.md#turning-napari-gui-into-plugins">Turning napari GUI into plugins (Part 4)</a></p></li>
+<li><p><a class="reference external" href="../entry_user_interf4/Readme#turning-napari-gui-into-plugins">Turning napari GUI into plugins (Part 4)</a></p></li>
 </ul>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="creating-advanced-guis-for-napari">
 <h1>Creating advanced GUIs for napari<a class="headerlink" href="#creating-advanced-guis-for-napari" title="Permalink to this headline">#</a></h1>
-<p>The <a class="reference external" href="../../johannes_mueller/entry_user_interf2/Readme.md#creating-advanced-standalone-guis">previous entry</a> showed you how to create more advanced GUIs with the aid of the designer tool. This third part will teach you how to import those GUIs to napari and how to produce them straight from python functions using <a class="reference external" href="https://napari.org/magicgui/index.html">magicgui</a>.</p>
+<p>The <a class="reference external" href="../../johannes_mueller/entry_user_interf2/Readme#creating-advanced-standalone-guis">previous entry</a> showed you how to create more advanced GUIs with the aid of the designer tool. This third part will teach you how to import those GUIs to napari and how to produce them straight from python functions using <a class="reference external" href="https://napari.org/magicgui/index.html">magicgui</a>.</p>
 <section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
@@ -622,7 +622,7 @@ title="Print to PDF"
 </section>
 <section id="installing-and-running-napari">
 <h2>Installing and running napari<a class="headerlink" href="#installing-and-running-napari" title="Permalink to this headline">#</a></h2>
-<p>The <a class="reference external" href="https://napari.org/">napari website</a> has a more complete <a class="reference external" href="https://napari.org/tutorials/fundamentals/installation.html">installation tutorial</a>, but, overall, you should <a class="reference external" href="https://biapol.github.io/blog/johannes_mueller/entry_user_interf2/Readme.md#creating-your-environment">create a new conda environment</a> and then type</p>
+<p>The <a class="reference external" href="https://napari.org/">napari website</a> has a more complete <a class="reference external" href="https://napari.org/tutorials/fundamentals/installation.html">installation tutorial</a>, but, overall, you should <a class="reference external" href="https://biapol.github.io/blog/johannes_mueller/entry_user_interf2/Readme#creating-your-environment">create a new conda environment</a> and then type</p>
 <p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">napari</span></code></p>
 <p>or</p>
 <p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">napari[all]</span></code></p>
@@ -659,7 +659,7 @@ Put the image in the same folder as the code and let’s expand it a bit:</p>
 </section>
 <section id="importing-your-fancy-gui-to-napari">
 <h2>Importing your fancy GUI to napari<a class="headerlink" href="#importing-your-fancy-gui-to-napari" title="Permalink to this headline">#</a></h2>
-<p>Here, I modified a bit the GUI from the <a class="reference external" href="../../johannes_mueller/entry_user_interf2/Readme.md#creating-a-simple-gui-with-the-designer">previous post</a> and it looks like this:</p>
+<p>Here, I modified a bit the GUI from the <a class="reference external" href="../../johannes_mueller/entry_user_interf2/Readme#creating-a-simple-gui-with-the-designer">previous post</a> and it looks like this:</p>
 <p><img alt="" src="../../_images/flood_tool_gui.png" /></p>
 <p>You can find the ‘.ui’ file to open this GUI with the designer <a class="reference external" href="https://github.com/BiAPoL/blog/raw/master/marcelo_zoccoler/entry_user_interf3/scripts/flood_tool.ui">here</a>. Download it and save it to the same folder of your code.</p>
 <p>Now let’s add it to napari! Modify the script as shown below:</p>
